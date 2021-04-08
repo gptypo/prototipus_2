@@ -185,8 +185,6 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 0;
-  left: 0;
   mix-blend-mode: multiply;
   z-index: 1;
 }
@@ -261,6 +259,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 1rem;
 }
 
 #logo_box object#intro_logo {
@@ -652,7 +651,7 @@ article {
   }
 }
 
-/* MAX 768px */
+/* KISEBB MINT 768px */
 @media only screen and (max-width: 768px) {
   .separator, .separator_start, .separator_end {
     width: 100vw;
@@ -676,6 +675,29 @@ article {
     font-size: 1rem;
     line-height: 1.5rem;
     text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .kapcsolat_infok {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 1rem;
+  }
+  .kapcsolat_infok span {
+    padding-bottom: 1rem;
+  }
+  .icon_48px {
+    width: 48px;
+    height: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
