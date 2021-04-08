@@ -182,7 +182,9 @@ section {
 }
   
 .intro_container {
+    min-height: -webkit-fill-available;
     height: 100vh;
+    top: 0;
     position: sticky;
     display: flex;
     flex-direction: column;
