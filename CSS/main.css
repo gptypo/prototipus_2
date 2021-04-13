@@ -488,7 +488,7 @@ section {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-left: -100px;
+  margin-left: -50px;
 }
 
 #half_arrow_balra img {
