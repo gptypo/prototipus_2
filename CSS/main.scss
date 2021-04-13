@@ -535,6 +535,8 @@ article {
   min-height: 50vh;
   position: relative;
   z-index: 9998;
+  display: flex;
+  align-items: center;
 }
 
 .grey3 {
