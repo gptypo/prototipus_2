@@ -60,6 +60,18 @@ html, body, * {
   font-family: "Krub" !important;
 }
 
+.vh100 {
+  height: 100vh;
+}
+
+.vh50 {
+  height: 50vh;
+}
+
+.vw100 {
+  width: 100vh;
+}
+
 /* Ikonok*/
 .icon_48px {
   display: -webkit-box;
@@ -70,7 +82,7 @@ html, body, * {
 }
 
 /* Szinek */
-/* Tipográfia fontok */
+/* TIPOGRÁFIA */
 a {
   font-family: 'Krub';
   font-size: 1rem;
@@ -101,6 +113,13 @@ h1 {
       -ms-grid-row-align: center;
       align-self: center;
   text-transform: uppercase;
+  color: #000000;
+}
+
+.projekt_nev {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #676767;
 }
 
 h3 {
@@ -168,7 +187,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 4rem !important;
+  padding-bottom: 4rem;
 }
 
 .intro_container {
@@ -194,6 +213,7 @@ section {
 
 #video_box {
   height: 75%;
+  width: 96%;
   padding-top: 2rem;
   padding-bottom: 2rem;
   -webkit-box-flex: 1;
@@ -206,6 +226,9 @@ section {
       align-content: center;
   overflow: hidden;
   mix-blend-mode: multiply;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 #video_box object {
@@ -216,8 +239,8 @@ section {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @-webkit-keyframes sizer {
@@ -274,9 +297,19 @@ section {
   padding-bottom: 0.5rem;
 }
 
-#logo_box object#down_shape {
+#logo_box a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: calc(100% * 0.2);
+}
+
+#logo_box a img {
+  height: 100%;
   -webkit-animation: fadeIn 4000ms;
           animation: fadeIn 4000ms;
   -ms-flex-item-align: center;
@@ -390,7 +423,6 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 2rem;
 }
 
 .title {
@@ -440,7 +472,7 @@ section {
   margin-right: -100px;
 }
 
-#half_arrow_jobbra img {
+#half_arrow_jobbra a img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,6 +497,16 @@ section {
   display: flex;
   height: auto;
   max-height: 100vh;
+}
+
+a#bemutakozas_anchor, a#projekt_anchor {
+  text-decoration: none;
+}
+
+a.bovebben {
+  text-decoration: none;
+  color: #868686;
+  font-weight: 800;
 }
 
 article {
@@ -572,6 +614,131 @@ article {
 }
 
 /* LANDPAGE VÉGE */
+/* BEMUTATKOZAS_KÜLSŐ */
+.background_all {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#bemutatkozas_bigpic {
+  top: 4rem;
+  left: 0;
+  margin-bottom: -4rem;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  height: calc(100vh);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("/probakepek/probakep_1.png");
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.fixed_background {
+  position: relative;
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fx_bg_1 {
+  background-image: url("/probakepek/hands-engineer-working-blueprint-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg");
+}
+
+.fx_bg_2 {
+  background-image: url("/probakepek/businessman-making-stack-wooden-pegs.jpg");
+}
+
+.sticky2 {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.overlay_img_width {
+  opacity: 0.9;
+  width: calc(100vmax * 0.38);
+  max-width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.bemutakozas_div {
+  width: 100vw;
+  height: auto;
+  background-color: #A6A6A6;
+}
+
+.grey3, .grey4, .grey5, .grey6, .grey7 {
+  width: 100%;
+  min-height: 50vh;
+  position: relative;
+  z-index: 9998;
+}
+
+.grey3 {
+  background-color: #BBBBBB;
+}
+
+.grey4 {
+  background-color: #A6A6A6;
+}
+
+.grey5 {
+  background-color: #868686;
+}
+
+.grey6 {
+  background-color: #676767;
+}
+
+#bemutatkozas_vege {
+  width: 100%;
+  height: calc(100vmin * 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#bemutatkozas_vege img {
+  max-width: calc(100% * 0.75);
+  max-height: calc(100% * 0.75);
+}
+
+#pic1 {
+  z-index: 5;
+}
+
+#pic2 {
+  z-index: 4;
+}
+
+.bemutakozas_div article {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+#bemutatkozas_container {
+  padding-bottom: 0rem;
+}
+
 /* PROJEKTEK_KÜLSŐ */
 .projekt {
   width: 100%;
@@ -778,16 +945,25 @@ article {
 .projekt_elem_container {
   width: 100%;
   min-height: calc(100vh - 4rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 2rem;
 }
 
 .projekt_kepes_resz {
-  width: 50%;
+  width: 66%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  padding-top: 8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   /*background-color:$grey5;*/
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -795,7 +971,7 @@ article {
 }
 
 .projekt_szoveges_resz {
-  width: 50%;
+  width: 33%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -804,13 +980,13 @@ article {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 8rem;
+  padding-right: 2rem;
 }
 
-/* PROJEKT_LEIARS*/
+/* PROJEKT KÉP és LEÍRÁS*/
 .imagebox {
-  width: calc(100vw * 0.4);
-  height: calc(100vw * 0.3);
+  width: calc(100vw * 0.6);
+  height: calc(100vw * 0.40);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -819,27 +995,24 @@ article {
 }
 
 .carousel-inner {
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .carousel-item {
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .carousel-item img {
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-/* Media formazasok */
+/* MEDIA */
 /* MIN 1024px */
 @media only screen and (min-width: 1024px) {
   .navbar-expand-lg .navbar-collapse {
@@ -881,7 +1054,7 @@ article {
 /* KISEBB MINT 768px */
 @media only screen and (max-width: 768px) {
   .separator, .separator_start, .separator_end {
-    width: 100vw;
+    width: 100%;
     max-height: 33vh;
   }
   article {
@@ -905,6 +1078,7 @@ article {
   }
 }
 
+/* KISEBB MINT 576px */
 @media only screen and (max-width: 576px) {
   .kapcsolat_infok {
     display: -webkit-box;
@@ -925,6 +1099,33 @@ article {
   .icon_48px {
     width: 48px;
     height: auto;
+  }
+  .cim h2 {
+    font-weight: 500;
+  }
+  .projekt_elem_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projekt_kepes_resz {
+    width: 100%;
+    height: auto;
+  }
+  .imagebox {
+    width: calc(100vw);
+    height: calc(100vw * 0.625);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+  .projekt_szoveges_resz {
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
