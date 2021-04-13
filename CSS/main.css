@@ -635,7 +635,7 @@ article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("/probakepek/probakep_1.png");
+  background-image: url("../probakepek/probakep_1.png");
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -650,11 +650,11 @@ article {
 }
 
 .fx_bg_1 {
-  background-image: url("/probakepek/hands-engineer-working-blueprint-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg");
+  background-image: url("../probakepek/hands-engineer-working-blueprint-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg");
 }
 
 .fx_bg_2 {
-  background-image: url("/probakepek/businessman-making-stack-wooden-pegs.jpg");
+  background-image: url("../probakepek/businessman-making-stack-wooden-pegs.jpg");
 }
 
 .sticky2 {
@@ -788,7 +788,7 @@ article {
 }
 
 .projekt_select#kesz {
-  background-image: url("/IMG/Proba_kep/projekt_proba_1.jpg");
+  background-image: url("../IMG/Proba_kep/projekt_proba_1.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -800,7 +800,7 @@ article {
 }
 
 .projekt_select#folyamatban {
-  background-image: url("/IMG/Proba_kep/projekt_proba_2.jpg");
+  background-image: url("../IMG/Proba_kep/projekt_proba_2.jpg");
   -o-object-fit: cover;
      object-fit: cover;
 }
