@@ -215,7 +215,7 @@ section {
   justify-content: center;
   mix-blend-mode: multiply;
   background-color: #D1D1D1;
-  z-index: -1;
+  z-index: 1;
   padding-bottom: 2rem;
 }
 
@@ -355,6 +355,7 @@ section {
   width: 100%;
   max-height: 50vh;
   overflow: hidden;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
