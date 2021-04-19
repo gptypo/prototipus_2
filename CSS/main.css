@@ -608,6 +608,7 @@ article {
 
 .fixed_background {
   position: relative;
+  bottom: 0;
   height: calc(10vw + 300px);
   background-attachment: fixed;
   background-position: center;
