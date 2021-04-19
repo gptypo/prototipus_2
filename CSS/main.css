@@ -215,7 +215,7 @@ section {
   justify-content: center;
   mix-blend-mode: multiply;
   background-color: #D1D1D1;
-  z-index: 1;
+  z-index: -1;
   padding-bottom: 2rem;
 }
 
