@@ -607,7 +607,7 @@ article {
 
 .fixed_background {
   position: relative;
-  height: 50vh;
+  height: calc(10vw + 300px);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
