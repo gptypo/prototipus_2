@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* End of the Reset :) */
+
+
+
+/* Méretek */
+
+html, body, * {
+  font-size: 100%!important;
+  font-family: 'Krub'!important;
+}
+
+/* Szinek */
+$white: #FFFFFF;
+$grey1: #DDDDDD;
+$grey2: #D1D1D1;
+$grey3: #BBBBBB;
+$grey4: #A6A6A6;
+$grey5: #868686;
+$grey6: #676767;
+$grey7: #000000;
+
+/* Tipográfia fontok */
+
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+
+a { 
+  font-family: 'Krub';
+  font-size: 1rem;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+#navbar_title_span {
+  font-weight: 300;
+  margin-right: 2rem;
+}
+
+
+
+
+/* Formázások innen */
+
+
+
+/* Header */
+
+html, body {
+  width: 100%;
+}
+
+header {
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 5;
+}
+
+.navbar {
+  min-height: 4rem;
+  background-color: $white!important;
+}
+
+.navbar-toggler-icon {
+  color: $grey7!important;
+}
+
+.navbar-light .navbar-brand {
+  color: $grey7!important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link {
+  color: $grey7!important;
+}
+
+/* Intro */
+
+.box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+}
+  
+.intro_container {
+    height: 100vh;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+#video_box {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+
+}
+
+#video_box img {
+    height: calc(100vh * 0.5);
+    display: flex;
+    animation: sizer 7000ms infinite;
+}
+
+@keyframes sizer {
+  0% { transform: scale(1 , 1);}
+  50% {  transform:scale(1.02 , 1.02);}
+  100% { transform: scale(1 , 1);}
+
+}
+
+
+
+
+#logo_box {
+  
+  justify-content: center;
+  bottom: 0;
+}
+
+#logo_box img {
+  width: calc(100vh * 0.2);
+  animation: fadeIn 4000ms;
+
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: $white;
+  z-index: 4;
+  overflow: hidden;
+}
+
+#x_shape {
+    width: 100%;
+    min-height: 100vmin;
+    //background-image: url("/IMG/Proba_kep/city-buildings-skyline-metropolitan-area.jpg");
+    background-color: red;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    mask-image: url("/IMG/SVG/half_x_shape_black.svg");
+    mask-size: 1080px;
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    z-index:5;
+}
+
+#-shape h1 {
+  z-index: 6;
+  color:black;
+}
+
+
+
+
+
+/* Media formazasok */
+
+@media only screen and (min-width: 992px) {
+ 
+  .navbar-expand-lg .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+ }
+}
+
+@media only screen and (max-width: 768px) {
+
+
+}
