@@ -198,11 +198,10 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .intro_container {
-  min-height: -webkit-fill-available;
   height: 100vh;
   top: 0;
   position: -webkit-sticky;
@@ -217,9 +216,11 @@ section {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  mix-blend-mode: multiply;
-  background-color: #a8a8a8;
-  z-index: 1;
+  /*
+    mix-blend-mode: multiply;
+    background-color: $grey2;
+    */
+  z-index: -1;
   padding-bottom: 2rem;
 }
 
@@ -434,8 +435,8 @@ main {
   -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .cim {
@@ -656,7 +657,7 @@ article {
   position: relative;
   bottom: 0;
   height: calc(10vw + 300px);
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
