@@ -96,11 +96,11 @@ a {
 }
 
 .navbar-brand {
-  font-weight: 700;
+  font-weight: 300;
 }
 
 #navbar_title_span {
-  font-weight: 300;
+  font-weight: 400;
   margin-right: 2rem;
 }
 
@@ -114,13 +114,13 @@ h1 {
 }
 
 .cim h2 {
-  font-size: 6vw;
+  font-size: 7vw;
   font-weight: 100;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
   text-transform: uppercase;
-  color: #000000;
+  color: #242526;
 }
 
 .projekt_nev {
@@ -132,7 +132,7 @@ h1 {
 h3 {
   font-weight: 700;
   font-size: 1.5rem;
-  line-height: 2.25rem;
+  line-height: 2.5rem;
   text-transform: uppercase;
 }
 
@@ -141,11 +141,51 @@ p {
   line-height: 1.5rem;
 }
 
+ul {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+ul.ures_pont_lista {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-left: 1.25rem;
+}
+
+li.teli_pont {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  list-style: disc outside none;
+}
+
+li.ures_pont {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  list-style: circle none;
+}
+
 strong {
   font-weight: 800 !important;
 }
 
 /* Formázások innen */
+/* SZÉCHENYI */
+.Szechenyi_container {
+  right: 0;
+  bottom: 0;
+  margin-bottom: -5px;
+  position: fixed;
+  z-index: 9999;
+  width: 200px;
+}
+
+.Szechenyi_container img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 /* HEADER */
 html, body {
   width: 100%;
@@ -157,7 +197,7 @@ header {
   left: 0;
   position: -webkit-sticky;
   position: sticky;
-  z-index: 9999;
+  z-index: 9998;
 }
 
 .navbar {
@@ -176,10 +216,6 @@ header {
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
   color: #000000 !important;
-}
-
-a.navbar-brand {
-  border-bottom: 0.5rem solid #000000;
 }
 
 /* INTRO_LANDPAGE */
@@ -220,6 +256,7 @@ section {
     mix-blend-mode: multiply;
     background-color: $grey2;
     */
+  /* z-index: -1; */
   z-index: -1;
   padding-bottom: 2rem;
 }
@@ -295,9 +332,10 @@ section {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 1.5rem;
 }
 
 #logo_box object#intro_logo {
@@ -309,7 +347,15 @@ section {
   padding-bottom: 0.5rem;
 }
 
-#logo_box a {
+.arrow_down {
+  height: 5vh;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+.arrow_down a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,10 +363,10 @@ section {
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
-  height: 20%;
+  height: 100%;
 }
 
-#logo_box a img {
+.arrow_down a img {
   height: 100%;
   -webkit-animation: fadeIn 4000ms;
   animation: fadeIn 4000ms;
@@ -367,7 +413,7 @@ section {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  z-index: 1000;
+  z-index: 2;
 }
 
 .separator_relative {
@@ -397,7 +443,12 @@ section {
 
 /* MAIN */
 main {
-  z-index: 2;
+  z-index: 10;
+}
+
+/* FOOTER */
+footer {
+  z-index: 11;
 }
 
 /*BEMUTATKOZAS_LANDPAGE*/
@@ -492,8 +543,15 @@ a#bemutakozas_anchor, a#projekt_anchor {
 
 a.bovebben {
   text-decoration: none;
-  color: #868686;
+  color: #3A3B3C;
+  text-transform: uppercase;
   font-weight: 800;
+}
+
+a.bovebben_light {
+  text-decoration: none;
+  color: #3A3B3C;
+  font-weight: 300;
 }
 
 article {
@@ -522,15 +580,17 @@ article {
 
 /* TANÚSÍTVÁNY */
 #tanusitvany {
-  padding-top: 4rem;
+  padding-left: calc(100vw * 0.2);
+  padding-right: calc(100vw * 0.2);
+  padding-top: 2rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-align: center;
@@ -538,12 +598,12 @@ article {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #868686;
+  background-color: #DDDDDD;
   z-index: 2;
 }
 
 #tanusitvany img {
-  width: 10%;
+  width: 15%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -554,6 +614,7 @@ article {
 #kapcsolat {
   width: 100%;
   height: auto;
+  min-height: 25vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -567,8 +628,8 @@ article {
   justify-content: center;
   background-color: #676767;
   z-index: 5;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 10rem;
 }
 
 #kapcsolat_title {
@@ -600,7 +661,6 @@ article {
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  padding-bottom: 2rem;
 }
 
 .kapcsolat_infok span, .kapcsolat_infok a {
@@ -616,7 +676,7 @@ article {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1rem;
   color: #A6A6A6;
   text-decoration: none;
@@ -648,7 +708,7 @@ article {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-image: url("../probakepek/probakep_1.png");
+  background-image: url("../IMG/Filler/web_ff_23_TEK.jpg");
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -657,28 +717,38 @@ article {
   position: relative;
   bottom: 0;
   height: calc(10vw + 300px);
+  min-height: 66vh;
   /*background-attachment: fixed;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.fx_bg_landp_projekt {
-  background-image: url("../IMG/Proba_kep/proba_3.jpg");
+.fx_bg_landp_projekt_1 {
+  background-image: url("../IMG/Filler/web_ff_16_TEK.jpg");
   z-index: 1;
 }
 
 .fx_bg_landp_projekt_2 {
-  background-image: url("../IMG/Proba_kep/projekt_proba_2.jpg");
+  background-image: url("../IMG/Filler/web_ff_39_TEK.jpg");
+  z-index: 1;
+}
+
+.fx_bg_landp_projekt_3 {
+  background-image: url("../IMG/Filler/web_FF_064_BKSZT.jpg");
   z-index: 1;
 }
 
 .fx_bg_1 {
-  background-image: url("../probakepek/hands-engineer-working-blueprint-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg");
+  background-image: url("../IMG/Filler/web_ff_044_BKSZT.jpg");
 }
 
 .fx_bg_2 {
-  background-image: url("../probakepek/businessman-making-stack-wooden-pegs.jpg");
+  background-image: url("../IMG/Filler/web_ff_048_BKSZT.jpg");
+}
+
+.fx_bg_3 {
+  background-image: url("../IMG/Filler/web_ff_28_TEK.jpg");
 }
 
 .sticky2 {
@@ -706,9 +776,9 @@ article {
 
 .grey3, .grey4, .grey5, .grey6, .grey7 {
   width: 100%;
-  min-height: 50vh;
+  min-height: 66vh;
   position: relative;
-  z-index: 9998;
+  z-index: 9990;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -783,6 +853,7 @@ article {
 
 .projekt_valaszto_container {
   width: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,7 +865,6 @@ article {
   top: 0;
   position: relative;
   width: 100%;
-  height: calc(100vh - 4rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -873,6 +943,7 @@ article {
 }
 
 #kesz_projektek {
+  padding-top: 8rem;
   width: 100%;
   min-height: 100vw;
   display: -webkit-box;
@@ -1042,8 +1113,121 @@ article {
   object-fit: cover;
 }
 
+/* PÁLYÁZATOK */
+.palyazat {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.palyazat_valaszto_container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  position: relative;
+}
+
+#palyazat_valaszto {
+  top: 0;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.palyazat_select {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.palyazat_select#kesz {
+  background-color: #BBBBBB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+  align-self: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.palyazat_select#folyamatban {
+  background-color: #868686;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.palyazat_select img {
+  opacity: 0.9;
+  width: calc(100vh * 0.5);
+  max-width: 100%;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.palyazat_select :hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.palyazat_select#folyamatban {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.palyazat_select a {
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+#kesz_palyazatok {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 /* MEDIA */
-/* MIN 1024px */
+/* Nagyobb mint 1024px */
 @media only screen and (min-width: 1024px) {
   .navbar-expand-lg .navbar-collapse {
     display: -webkit-box;
@@ -1057,9 +1241,24 @@ article {
     font-size: 1.25rem;
     line-height: 2rem;
   }
+  ul {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  li.teli_pont, li.ures_pont {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  #tanusitvany img {
+    width: 8%;
+  }
+  .Szechenyi_container {
+    margin-bottom: -5px;
+    width: 300px;
+  }
 }
 
-/* MAX 1024px */
+/* Kisebb mint 1024px */
 @media only screen and (max-width: 1024px) {
   #projekt_valaszto {
     top: 0;
@@ -1078,6 +1277,20 @@ article {
   .projekt_select {
     width: 100%;
     height: 50vh;
+  }
+  #palyazat_valaszto {
+    top: 0;
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
   }
 }
 
@@ -1099,29 +1312,37 @@ article {
   .cim h2 {
     font-weight: 100;
   }
-  h3 {
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-transform: uppercase;
-  }
-}
+  /*
 
-/* KISEBB MINT 576px */
-@media only screen and (max-width: 576px) {
+h3 {
+  font-weight: 700;
+  font-size: 1rem;
+  /*line-height: 1.5rem;
+  text-transform: uppercase;
+  } */
   .kapcsolat_infok {
+    padding-left: calc(100vw * 0.2);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .kapcsolat_infok span {
     padding-bottom: 1rem;
   }
+  .palyazat_select a {
+    font-size: 2.5rem;
+  }
+}
+
+/* KISEBB MINT 576px */
+@media only screen and (max-width: 576px) {
   .kapcsolat_infok span {
     font-size: 0.75rem;
     padding-bottom: 1rem;
@@ -1152,10 +1373,30 @@ article {
     position: relative;
     overflow: hidden;
   }
+  #logo_box {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .arrow_down {
+    display: none;
+  }
   .projekt_szoveges_resz {
     width: 100%;
     padding-top: 2rem;
     padding-left: 2rem;
+  }
+  .palyazat_szoveges_resz {
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+/* KISEBB MINT 425px */
+@media only screen and (max-width: 425px) {
+  #tanusitvany {
+    padding-right: calc(100vw * 0.1);
   }
 }
 /*# sourceMappingURL=main.css.map */

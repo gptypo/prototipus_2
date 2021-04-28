@@ -1,0 +1,951 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unica+One&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End of the Reset :) */
+/*colors =>
+BLUE color: #00ADBB;
+RED color: #F0553F;
+GREY color: #D7D2CB;
+
+colors end */
+* {
+  padding: 0;
+  margin: 0;
+  font-weight: unset;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  max-width: 100%;
+  font-size: 16px;
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  width: 100vw;
+  z-index: 20;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vh;
+  font-family: 'Unica One';
+  font-size: 50%;
+  color: #F0553F;
+  margin: auto;
+  -webkit-animation: loadIn 4s forwards;
+          animation: loadIn 4s forwards;
+}
+
+@-webkit-keyframes loadIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loadIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.intro {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+  color: white;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100vw;
+  height: 98vh;
+  visibility: hidden;
+}
+
+.intro svg {
+  background-color: white;
+}
+
+.header, .navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: auto;
+  background-color: #00ADBB;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 2;
+}
+
+/*navbar menu start*/
+.topnav {
+  overflow: hidden;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  z-index: 3;
+}
+
+.topnav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topnav a img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+  margin: 0 auto;
+  opacity: 1;
+  width: calc(100vw*0.30);
+}
+
+.topnav #myLinks {
+  display: none;
+  width: 100vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-bottom: 1rem;
+}
+
+.topnav #myLinks a {
+  position: relative;
+  width: auto;
+  margin: 0;
+  font-family: "Unica One", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*text-decoration: underline;
+    text-decoration-thickness: 0.5rem;*/
+}
+
+/*navbar menu end*/
+main, .section {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+/* motto section start here */
+#motto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  padding-top: 2rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding-top: 2rem;
+  width: 100vw;
+  background-color: #00ADBB;
+  color: #FFFFFF;
+}
+
+#motto_icon {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0rem;
+}
+
+#motto_icon img {
+  width: 20%;
+}
+
+#motto_pic picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+}
+
+#motto_pic picture img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 50%;
+}
+
+#motto_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 66%;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+#motto_pic img {
+  max-width: 70%;
+}
+
+#diohejban .social {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 4rem;
+}
+
+.social img {
+  width: 5rem;
+  height: auto;
+}
+
+
+
+/* diohejban section start here */
+#diohejban #divider, #diohejban #divider img {
+  width: 100vw;
+}
+
+#diohejban {
+  top: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: auto;
+  background-color: #D7D2CB;
+  padding-bottom: 6rem;
+}
+
+#diohejban_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 66%;
+}
+
+#diohejban #cap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  z-index: 4;
+}
+
+#diohejban #cap img {
+  margin-top: -50px;
+  width: 20%;
+}
+
+/* service section start here */
+.tipografika_container {
+  top: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: auto;
+  background-color: #F0553F;
+}
+
+#tipografika {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#graphic_design {
+  width: 66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-top: 2rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#online_design {
+  width: 66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-top: 2rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#head_img {
+  margin-top: 4rem;
+  width: 100vw;
+}
+
+#portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  z-index: 3;
+  margin-top: -20%;
+}
+
+#portfolio img {
+  width: 100%;
+}
+
+#works {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFFFF;
+  z-index: 2;
+  margin-top: -2%;
+}
+
+#works h3 {
+  margin: 0 auto;
+  max-width: 80vw;
+  padding-top: 4rem;
+  font-family: 'Unica One';
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.work-album {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.work-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: .10rem;
+  padding-right: .10rem;
+  padding-bottom: .2rem;
+  width: 50%;
+  height: auto;
+}
+
+.work-container img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+footer {
+    display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #00ADBB;
+  z-index: 4;
+}
+
+footer h3, a {
+  color: #FFFFFF;
+  padding-top: 0rem;
+}
+
+footer .contacts {
+  text-align: center;
+}
+
+footer img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_icon {
+  max-width: 80%;
+  padding-bottom: 2rem;
+}
+
+footer #social_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer #social_container a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+footer article {
+  width: 100vw;
+  height: 200px;
+}
+
+img.icons {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  width: 25%;
+}
+
+/* Typographic */
+
+footer .contacts {
+  margin-bottom: 0.5rem;
+  color: #FFFFFF;
+}
+
+footer #footer_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#motto h3 {
+  padding: 0rem;
+}
+
+/* typography */
+
+h1 {
+  font-family: "Unica One";
+  font-size: calc(100vw*0.066);
+  color: #FFFFFF;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  margin: 0 auto;
+  max-width: 80vw;
+  font-family: 'Unica One';
+  font-weight: 300;
+  text-align: center;
+}
+
+p {
+  line-height: 3.5rem;
+  word-spacing: 0.15rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.loader p {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+}
+
+#diohejban a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+/* Media queries */
+@media only screen and (max-width: 1024px) {
+  #motto {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+  p {
+    font-size: 1.75rem;
+    line-height: 2.75rem;
+  }
+  .social img {
+    width: 4rem;
+    height: auto;
+  }
+  #diohejban .social {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-top: 3rem;
+  }
+  .topnav #myLinks a {
+    font-size: 1.25rem;
+  }
+
+  #motto_numbers {
+    width: 66%;
+    padding-bottom: 2rem;
+  }
+  footer #social_container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .topnav #myLinks a {
+    font-size: 1rem;
+  }
+
+  .topnav a img {
+    width: calc(100vw*0.5);
+  }
+
+  h1 {
+    font-family: "Unica One";
+    color: #FFFFFF;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .loader p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  #motto {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  #motto_text {
+    padding-bottom: 1rem;
+  }
+  #motto_numbers {
+    width: 66%;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+  }
+  #motto_pic picture img {
+    max-width: 66%;
+  }
+  .topnav #myLinks {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .topnav #myLinks a {
+    font-size: 1rem;
+  }
+
+  #diohejban #cap img {
+    margin-top: -25px;
+    width: 20%;
+  }
+  .social img {
+    width: 3rem;
+    height: auto;
+  }
+  #diohejban .social {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-top: 2rem;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    padding-bottom: 0rem;
+  }
+  #tipografika h3 {
+    padding: 0rem;
+  }
+  p {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+  }
+  footer p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  footer h3 {
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  img.icons {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    width: 25%;
+  }
+
+  #portfolio {
+    margin-top: -25%;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  
+  .social img:hover {
+    -webkit-animation: grow 2000ms infinite;
+            animation: grow 2000ms infinite;
+  }
+  
+  #diohejban a:hover {
+    -webkit-animation: pulse 2000ms;
+            animation: pulse 2000ms;
+  }
+
+  .topnav img:hover {
+    -webkit-animation: pulse 1500ms infinite;
+            animation: pulse 1500ms infinite;
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes grow {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.25);
+              transform: scale(1.25);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  @keyframes grow {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.25);
+              transform: scale(1.25);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  
+    .topnav #myLinks {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .topnav #myLinks a {
+      font-size: 0.75rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    
+    footer p {
+      font-size: 1rem;
+      line-height: 1.75rem;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 320px) {
+  
+    .topnav #myLinks {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .topnav #myLinks a {
+      font-size: 0.5rem;
+    }
+
+    p, footer p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+    
+    h3 {
+      font-size: 1.5rem;
+      line-height:2.25rem;
+    }
+
+
+}
+
+
+
+
+
+@media only screen and (min-width: 1440px) {
+
+  h1 {
+    font-family: "Unica One";
+    color: #FFFFFF;
+    font-size: calc(100vw*0.033);
+  }
+  
+
+  footer h3 {
+    font-size: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .topnav a img {
+    width: calc(100vw*0.30);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
