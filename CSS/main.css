@@ -265,7 +265,7 @@ section {
     */
   /* z-index: -1; */
   z-index: -1;
-  padding-bottom: 4rem;
+  padding-bottom: 2.5rem;
 }
 
 #video_box {
@@ -342,7 +342,7 @@ section {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
 }
 
 #logo_box object#intro_logo {
