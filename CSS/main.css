@@ -16,6 +16,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+
+/* Tervezte: Gajdács Péter. Minden jog fenntartva */
+
 @import url("https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap");
 a
 html, body, div, span, applet, object, iframe,
@@ -193,6 +196,17 @@ strong {
      object-fit: contain;
 }
 
+.Szechenyi_img_container{
+  width: 100%;
+  height: auto;
+}
+
+.Szechenyi_img_container img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 /* HEADER */
 html, body {
   width: 100%;
@@ -339,9 +353,9 @@ section {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 1.5rem;
 }
 
@@ -585,6 +599,14 @@ article {
   background-repeat: no-repeat;
 }
 
+#landpage_palyazatok {
+  background-color: #A6A6A6;
+  background-image: url(../IMG/SVG/Bemutat_landpage_3.svg);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 /* TANÚSÍTVÁNY */
 #tanusitvany {
   padding-left: calc(100vw * 0.2);
@@ -717,7 +739,7 @@ article {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-image: url("../IMG/Filler/web_ff_23_TEK.jpg");
+  background-image: url("../IMG/Filler/ff_46_Bajcsy.jpg");
   padding-left: 2rem;
   padding-right: 2rem;
   z-index: -1;
@@ -753,32 +775,36 @@ article {
   background-size: cover;
 }
 
+/* SÁVOS KÉPEK FŐOLDAL */
+
 .fx_bg_landp_projekt_1 {
-  background-image: url("../IMG/Filler/ff_46_Bajcsy.JPG");
-  background-position: center !important;
+  background-image: url("../IMG/Filler/ff_56_Bajcsy.JPG");
+  background-position: top !important;
   z-index: 1;
 }
 
 .fx_bg_landp_projekt_2 {
-  background-image: url("../IMG/Filler/ff_07_TEK.JPG");
+  background-image: url("../IMG/Filler/ff_37_TEK.JPG");
   z-index: 1;
 }
 
 .fx_bg_landp_projekt_3 {
-  background-image: url("../IMG/Filler/ff_013_BKSZT.JPG");
+  background-image: url("../IMG/Filler/FF_013_BKSZT.JPG");
   z-index: 1;
 }
 
+/* SÁVOS KÉPEK BEMUTATKOZÁS */
+
 .fx_bg_landp_projekt_4 {
-  background-image: url("../IMG/Filler/web_FF_044_BKSZT.jpg");
+  background-image: url("../IMG/Filler/bemutat_1.jpg");
 }
 
 .fx_bg_landp_projekt_5 {
-  background-image: url("../IMG/Filler/web_FF_048_BKSZT.jpg");
+  background-image: url("../IMG/Filler/bemutat_2.jpg");
 }
 
 .fx_bg_landp_projekt_6 {
-  background-image: url("../IMG/Filler/web_ff_28_TEK.jpg");
+  background-image: url("../IMG/Filler/bemutat_3.jpg");
 }
 
 .sticky2 {
@@ -1258,8 +1284,8 @@ section.projekt_valaszto_container {
 }
 
 #kesz_palyazatok {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -1425,14 +1451,20 @@ h3 {
     position: relative;
     overflow: hidden;
   }
+
+  /*
   #logo_box {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+
   .arrow_down {
     display: none;
   }
+  */
+
+
   .projekt_szoveges_resz {
     width: 100%;
     padding-top: 2rem;
