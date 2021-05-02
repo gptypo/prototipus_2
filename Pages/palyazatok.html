@@ -60,23 +60,40 @@
             <div id="palyazat_valaszto">
 
                 <div class="palyazat_select" id="kesz">
-                    <a href="#kesz_palyazatok">Széchenyi 2020 pályázatok</a>
+                    <a href="#kesz_palyazatok"><img src="../IMG/SVG/Szechenyi_palyazatok_2.svg" alt=""></a>
                 </div>
 
                 <div class="palyazat_select" id="folyamatban">
-                    <a href="#keszulo_palyazatok">Egyéb pályázatok</a>
+                    <a><img src="../IMG/SVG/Egyebi_palyazatok_2.svg" alt=""></a>
                 </div>
 
             </div>
         </section>
 
         <section id="kesz_palyazatok">
-                <div class="projekt_title">
-                    <h3>Széchenyi 2020 pályázatok</h3>
-                </div>
-                <div class="Szechenyi_img_container">
-                    <img src="../IMG/Szechenyi/Szechenyi_1.jpg" alt="Széchenyi pályázati plakát">
-                </div>
+            <div class="projekt_title">
+                <h3>Széchenyi 2020 pályázatok</h3>
+            </div>
+
+            <div id="szechenyi_palyatok_container">
+            <!-- Trigger the Modal -->
+            <img id="Szechenyi_Modal_1" src="../IMG/Szechenyi/Szechenyi_1.jpg" alt="Széchenyi pályazat 2020"
+                style="width:100%;max-width:300px">
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+        </div>
+
         </section>
     </main>
 
@@ -102,6 +119,34 @@
             $(".navbar-collapse").collapse('hide');
         });
     </script>
+
+    <!--Modal Script-->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("Szechenyi_Modal_1");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+
+
+
+
 
 </body>
 
