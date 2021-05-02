@@ -3,7 +3,7 @@
 
 <head>
     <!--Tervezte: Gajdács Péter. Minden jog fenntartva -->
-     <!--www.gajdacspeter.hu-->
+    <!--www.gajdacspeter.hu-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,32 +28,32 @@
     <!--Header-->
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="../index.html#bemutatkozas">DIGI-X Építő Zrt.</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Bemutatkozás</a>
-                  </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#magunkrol">Magunkról<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#tortenetunk">A mi történetünk</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#strategia">Stratégiánk</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#szolgaltatas">Szolgáltatásaink</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="../index.html#bemutatkozas">DIGI-X Építő Zrt.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Bemutatkozás</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#magunkrol">Magunkról</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tortenetunk">A mi történetünk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#strategia">Stratégiánk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#szolgaltatas">Szolgáltatásaink</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-      </header>
+    </header>
 
 
 
@@ -137,19 +137,20 @@
                     <article id="szolgaltatas">
                         <h3>SZOLGÁLTATÁSAINK</h2><br>
                             <p>
-                                Saját telephellyel, szerszám- és járműparkkal rendelkezünk, környezetbarát járművekkel és technológiával dolgozunk.
+                                Saját telephellyel, szerszám- és járműparkkal rendelkezünk, környezetbarát járművekkel
+                                és technológiával dolgozunk.
 
                                 <br><br><strong>Főbb szolgáltatásaink:</strong>
-                                <ul>
-                                    <li class="teli_pont">technológiai tervezés és -kivitelezés</li>
-                                    <li class="teli_pont">generáltervezés és -kivitelezés</li>
-                                    <ul class="ures_pont_lista">
+                            <ul>
+                                <li class="teli_pont">technológiai tervezés és -kivitelezés</li>
+                                <li class="teli_pont">generáltervezés és -kivitelezés</li>
+                                <ul class="ures_pont_lista">
                                     <li class="ures_pont">-szakipari kivitelezések</li>
                                     <li class="ures_pont">-épületgépészeti szerelések</li>
                                     <li class="ures_pont">-kert- és útépítés</li>
-                                    </ul>
                                 </ul>
-                                
+                            </ul>
+
                             </p>
                     </article>
                 </div>
@@ -173,13 +174,20 @@
         </div>
         -->
         <div class="kapcsolat_infok">
-          <span itemprop="telephone"><img class="icon_48px" src="../IMG/Icons/phone.svg">+36 1 608 2777</span>
-    
-          <span itemprop="link"><img class="icon_48px" src="../IMG/Icons/email.svg">info(kukac)digi-x.hu</span>
-          <span itemprop="adress"><img class="icon_48px" src="../IMG/Icons/mail.svg">1066 Budapest, Teréz krt. 6., 1/1/B</span>
-        </div>
-      </footer>
+            <span itemprop="telephone"><img class="icon_48px" src="../IMG/Icons/phone.svg">+36 1 608 2777</span>
 
+            <span itemprop="link"><img class="icon_48px" src="../IMG/Icons/email.svg">info(kukac)digi-x.hu</span>
+            <span itemprop="adress"><img class="icon_48px" src="../IMG/Icons/mail.svg">1066 Budapest, Teréz krt. 6.,
+                1/1/B</span>
+        </div>
+    </footer>
+
+    <!--Navbar zaro Jquery-->
+    <script>
+        $('.navbar-collapse a').click(function () {
+            $(".navbar-collapse").collapse('hide');
+        });
+    </script>
 </body>
 
 </html>
