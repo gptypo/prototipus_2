@@ -1528,6 +1528,14 @@ section.valaszto_container {
     flex-direction: column;
     overflow: hidden;
   }
+
+.landpage_div_container_bemutatkozas article  {
+    margin-top: -4rem; 
+    padding-top: 4rem;
+  }
+
+
+
 }
 
 /* KISEBB MINT 767px */
@@ -1547,6 +1555,7 @@ section.valaszto_container {
     margin-right: calc(100vw * 0.125);
   }
 
+
   .cim {
     margin-left: calc(100vw * 0.125);
     margin-right: calc(100vw * 0.125);
@@ -1561,20 +1570,20 @@ section.valaszto_container {
     padding-bottom: 0rem;
   }
 
+  /*
   .bemutakozas_div article {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-
-
-
-  /*
+  
   h3 {
   font-weight: 700;
   font-size: 1rem;
   /*line-height: 1.5rem;
   text-transform: uppercase;
-  } */
+  } 
+  
+  */
 
   .kapcsolat_infok {
     padding-left: calc(100vw * 0.125);
