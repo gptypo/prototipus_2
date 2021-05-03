@@ -1516,6 +1516,7 @@ section.valaszto_container {
     width: 100%;
     height: 50vh;
   }
+
   #belso_valaszto {
     top: 0;
     position: relative;
@@ -1535,13 +1536,18 @@ section.valaszto_container {
     min-height: 100vh;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    scroll-margin-top: 8rem; 
   }
-/*
-.landpage_div_container_bemutatkozas article  {
+
+  
+  .landpage_div_container_bemutatkozas h3  {
+    scroll-margin-top: 5rem;
+    /*
     margin-top: -4rem; 
     padding-top: 4rem;
+    */
   }
-  */
+
 
 
 
