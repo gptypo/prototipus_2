@@ -1533,15 +1533,14 @@ section.valaszto_container {
   }
 
   .landpage_div_container_bemutatkozas {
-    min-height: 100vh;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    scroll-margin-top: 8rem; 
   }
 
   
-  .landpage_div_container_bemutatkozas h3  {
-    scroll-margin-top: 5rem;
+  .landpage_div_container_bemutatkozas article  {
+    scroll-margin-top: 8rem;
+    
     /*
     margin-top: -4rem; 
     padding-top: 4rem;
