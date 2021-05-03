@@ -26,7 +26,7 @@
 <body>
 
     <!--Header-->
-    <header class="header" style="mix-blend-mode: multiply;">
+    <header class="header">
         <nav class="navbar  navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="../index.html#bemutatkozas">DIGI-X Építő Zrt.</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -64,8 +64,8 @@
         <section id="bemutatkozas_container">
             <div class="bemutakozas_div">
 
-                <div class="landpage_div_container_bemutatkozas" >
-                    <article class="ofset" id="magunkrol">
+                <div class="landpage_div_container_bemutatkozas" id="magunkrol" >
+                    <article>
                         <p>
                             XXY A Digi-X Építő Zrt. csapata több mint 18 éves tapasztalattal rendelkezik a
                             generálkivitelezés és a technológiai szakértés terén. Szakértelmünknek köszönhetően olyan
@@ -87,8 +87,8 @@
 
                 <div class="fixed_background fx_bg_landp_projekt_4"></div>
 
-                <div class="landpage_div_container_bemutatkozas" >
-                    <article id="tortenetunk">
+                <div class="landpage_div_container_bemutatkozas" id="tortenetunk">
+                    <article >
                         <h3>A MI TÖRTÉNETÜNK</h2><br>
                             <p>
                                 A Digi-X Építő Zrt., jogelődje a Digi-X Mérnöki Szolgáltató Bt. 2003-ban alakult,
@@ -114,8 +114,8 @@
 
                 <div class="fixed_background fx_bg_landp_projekt_5"></div>
 
-                <div class="landpage_div_container_bemutatkozas" >
-                    <article id="strategia">
+                <div class="landpage_div_container_bemutatkozas"  id="strategia" >
+                    <article>
                         <h3>STRATÉGIÁNK</h2><br>
                             <p>
                                 A Digi-X Építő Zrt. magasan kvalifikált, jó referenciákkal rendelkező alvállalkozók és
@@ -133,8 +133,8 @@
 
                 <div class="fixed_background fx_bg_landp_projekt_6"></div>
 
-                <div class="landpage_div_container_bemutatkozas"  style="min-height: 0;">
-                    <article id="szolgaltatas">
+                <div class="landpage_div_container_bemutatkozas" id="szolgaltatas" style="min-height: 0;">
+                    <article >
                         <h3>SZOLGÁLTATÁSAINK</h2><br>
                             <p>
                                 Saját telephellyel, szerszám- és járműparkkal rendelkezünk, környezetbarát járművekkel
@@ -187,6 +187,10 @@
         $('.navbar-collapse a').click(function () {
             $(".navbar-collapse").collapse('hide');
         });
+
+        function scrollTo(hash) {
+    location.hash = "#" + hash;
+}
     </script>
     
 
