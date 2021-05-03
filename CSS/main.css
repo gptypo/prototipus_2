@@ -835,7 +835,11 @@ article {
 .landpage_div_container_bemutatkozas {
   width: 100%;
   height: auto;
+  min-height: 66vh;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 2;
   overflow: hidden;
   -webkit-box-orient: vertical;
