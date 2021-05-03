@@ -997,7 +997,7 @@ article {
 }
 
 .projekt_valaszto_container, 
-.palyazat_valaszto_container {
+.valaszto_container {
   width: 100%;
   min-height: 90vh;
   display: -webkit-box;
@@ -1007,12 +1007,12 @@ article {
   position: relative;
 }
 
-.palyazat_valaszto_container {
+.valaszto_container {
   height: 100vh;
 }
 
 #projekt_valaszto, 
-#palyazat_valaszto {
+#belso_valaszto {
   top: 0;
   position: relative;
   width: 100%;
@@ -1027,7 +1027,7 @@ article {
 }
 
 section.projekt_valaszto_container,
-section.palyazat_valaszto_container {
+section.valaszto_container {
   padding-bottom: 0rem;
 }
 
@@ -1042,30 +1042,30 @@ section.palyazat_valaszto_container {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .projekt_select#kesz {
   background-image: url("../IMG/Filler/ff_59_Bajcsy.JPG");
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-  align-self: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .projekt_select#folyamatban {
   background-image: url("../IMG/Filler/ff_03_TEK.JPG");
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-  align-self: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.projekt_select#rendved {
+  background-image: url("../IMG/Filler/ff_41_TEK.JPG");
+}
+
+.projekt_select#kozint {
+  background-image: url("../IMG/Filler/ff_28_Bajcsy.JPG");
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
@@ -1136,7 +1136,7 @@ section.palyazat_valaszto_container {
 #kesz_projektek {
   padding-top: 8rem;
   width: 100%;
-  min-height: 100vw;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1228,9 +1228,11 @@ section.palyazat_valaszto_container {
 }
 
 .projekt_box_container .projekt_box {
-  width: 320px;
-  height: calc(320px + 1rem);
+  min-width: 320px;
+  width: 30vw;
+  height: calc(30vw -1 rem);
   padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* KÉSZ PROJEKTEK */
@@ -1318,7 +1320,7 @@ section.palyazat_valaszto_container {
 }
 
 /* Régi
-.palyazat_valaszto_container {
+.belso_valaszto_container {
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -1328,7 +1330,7 @@ section.palyazat_valaszto_container {
   position: relative;
 }
 
-#palyazat_valaszto {
+#belso_valaszto {
   top: 0;
   position: relative;
   width: 100%;
@@ -1426,11 +1428,11 @@ section.palyazat_valaszto_container {
 }
 
 #kesz_palyazatok {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 0rem;
   width: 100%;
   height: auto;
-  min-height: 72vh;
+  min-height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1441,6 +1443,9 @@ section.palyazat_valaszto_container {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
 }
 
 /* MEDIA */
@@ -1505,7 +1510,7 @@ section.palyazat_valaszto_container {
     width: 100%;
     height: 50vh;
   }
-  #palyazat_valaszto {
+  #belso_valaszto {
     top: 0;
     position: relative;
     width: 100%;
@@ -1630,7 +1635,15 @@ section.palyazat_valaszto_container {
     overflow: hidden;
   }
 
-  p, li.teli_pont, li.ures_pont, a {
+  .img_fit {
+    padding-bottom: 0.25rem;
+  }
+
+  p, 
+  li.teli_pont, 
+  li.ures_pont, 
+  a, 
+  .projekt_box span {
     font-size: 0.75rem;
     line-height: 1.25rem;
   }
@@ -1639,12 +1652,18 @@ section.palyazat_valaszto_container {
     font-size: 1rem;
   }
 
-  h3 {
+  h3, 
+  .projekt_title h3,
+  .projekt_nev {
     font-weight: 600;
     font-size: 1.25rem;
     line-height: auto;
   }
   
+  .projekt_select img,
+  .palyazat_select img {
+  width: calc(100vh * 0.4);
+}
 
   /*
   #logo_box {
