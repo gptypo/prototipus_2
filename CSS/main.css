@@ -1529,10 +1529,17 @@ section.valaszto_container {
     overflow: hidden;
   }
 
+  .landpage_div_container_bemutatkozas {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+/*
 .landpage_div_container_bemutatkozas article  {
     margin-top: -4rem; 
     padding-top: 4rem;
   }
+  */
 
 
 
