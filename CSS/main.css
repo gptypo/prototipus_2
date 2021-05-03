@@ -1060,7 +1060,7 @@ section.valaszto_container {
 }
 
 .projekt_select#folyamatban {
-  background-image: url("../IMG/Filler/ff_03_TEK.JPG");
+  background-image: url("../IMG/Filler/ff_aktualis_proj.jpg");
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
