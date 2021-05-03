@@ -1547,7 +1547,9 @@ section.valaszto_container {
     */
   }
 
-
+  :target {
+  padding-top: 8rem;
+}
 
 
 }
