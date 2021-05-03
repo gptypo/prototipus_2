@@ -1530,8 +1530,9 @@ section.valaszto_container {
   }
 
   .landpage_div_container_bemutatkozas {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    min-height: 100vh;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
 /*
