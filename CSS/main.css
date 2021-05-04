@@ -1038,7 +1038,7 @@ article {
 }
 
 .valaszto_container {
-  height: 100vh;
+  height: calc(100vh - 4rem);
 }
 
 #palyazat_zindex {
@@ -1470,7 +1470,7 @@ section.valaszto_container {
 }
 
 #szechenyi_palyazatok {
-  padding-top: 0rem;
+  padding-top: 2rem;
   padding-bottom: 0rem;
   width: 100%;
   height: auto;
