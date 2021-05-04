@@ -1470,7 +1470,7 @@ section.valaszto_container {
 }
 
 #szechenyi_palyazatok {
-  padding-top: 2rem;
+  padding-top: 6rem;
   padding-bottom: 0rem;
   width: 100%;
   height: auto;
@@ -1495,6 +1495,8 @@ section.valaszto_container {
   background-repeat: no-repeat;
   background-size: 200px;
 }
+
+
 
 .anchor_span { 
   margin-top: -3.7rem;
