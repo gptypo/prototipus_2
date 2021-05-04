@@ -196,6 +196,26 @@ strong {
   position: fixed;
   z-index: 1;
   width: 200px;
+  flex-direction: column;
+}
+
+.szechenyi_div_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.szechenyi_div_bottom img {
+  width: 300px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #Szechenyi_zindex {
@@ -1489,11 +1509,12 @@ section.valaszto_container {
   -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
-  */
+  
   background-image: url("../IMG/SVG/infoblokk_kedv_final_also_rgb_ERFA.svg");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 200px;
+  */
 }
 
 
@@ -1788,6 +1809,9 @@ section.valaszto_container {
         pointer-events: none;
       }
     
+      .szechenyi_div_bottom img {
+        width: 200px;
+      }
 
   
 }
