@@ -185,6 +185,7 @@ strong {
 
 .radius {
   border: 1px solid #000000;
+  mix-blend-mode: multiply;
 }
 
 /* SZÉCHENYI */
