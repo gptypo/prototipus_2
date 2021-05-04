@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <!--Tervezte: Gajdács Péter. Minden jog fenntartva -->
@@ -39,10 +39,16 @@
                         <a class="nav-link" href="#">Bemutatkozás</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Pages/projektek.html">Projektek</a>
+                        <a class="nav-link anchor" href="../Pages/bemutatkozas.html#magunkrol">Magunkról</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Pages/palyazatok.html">Pályázatok</a>
+                        <a class="nav-link anchor" href="../Pages/bemutatkozas.html#tortenetunk">A mi történetünk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Pages/bemutatkozas.html#strategia">Stratégiánk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Pages/bemutatkozas.html#szolgaltatas">Szolgáltatásaink</a>
                     </li>
                 </ul>
             </div>
@@ -55,10 +61,12 @@
         <div id="bemutatkozas_bigpic" class="background_all">
             <img class="overlay_img_width" src="../IMG/SVG/Bemutatkozas_3_X.svg" alt="">
         </div>
+
         <section id="bemutatkozas_container">
             <div class="bemutakozas_div">
 
-                <div class="landpage_div_container_bemutatkozas" id="magunkrol" >
+                <span class="anchor_span" id="magunkrol">&nbsp;</span>
+                <div class="landpage_div_container_bemutatkozas" >
                     <article>
                         <p>
                             A Digi-X Építő Zrt. csapata több mint 18 éves tapasztalattal rendelkezik a
@@ -81,7 +89,8 @@
 
                 <div class="fixed_background fx_bg_landp_projekt_4"></div>
 
-                <div class="landpage_div_container_bemutatkozas" id="tortenetunk">
+                <span class="anchor_span" id="tortenetunk">&nbsp;</span>
+                <div class="landpage_div_container_bemutatkozas" >
                     <article >
                         <h3>A MI TÖRTÉNETÜNK</h2><br>
                             <p>
@@ -108,7 +117,8 @@
 
                 <div class="fixed_background fx_bg_landp_projekt_5"></div>
 
-                <div class="landpage_div_container_bemutatkozas"  id="strategia" >
+                <span class="anchor_span" id="strategia">&nbsp;</span>
+                <div class="landpage_div_container_bemutatkozas">
                     <article>
                         <h3>STRATÉGIÁNK</h2><br>
                             <p>
@@ -127,7 +137,8 @@
 
                 <div class="fixed_background fx_bg_landp_projekt_6"></div>
 
-                <div class="landpage_div_container_bemutatkozas" id="szolgaltatas">
+                <span class="anchor_span" id="szolgaltatas">&nbsp;</span>
+                <div class="landpage_div_container_bemutatkozas">
                     <article >
                         <h3>SZOLGÁLTATÁSAINK</h2><br>
                             <p>
@@ -181,9 +192,9 @@
         $('.navbar-collapse a').click(function () {
             $(".navbar-collapse").collapse('hide');
         });
-    </script>
     
 
+</script>   
     
 </body>
 

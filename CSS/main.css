@@ -75,6 +75,9 @@ table {
 html, body, * {
   font-size: 100%;
   font-family: "Krub" !important;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .vh100 {
@@ -180,6 +183,10 @@ strong {
 
 /* Formázások innen */
 
+.radius {
+  border: 1px solid #000000;
+}
+
 /* SZÉCHENYI */
 .Szechenyi_container {
   right: 0;
@@ -202,6 +209,17 @@ strong {
   height: auto;
 }
 
+
+.Szechenyi_1 {
+  width: 100%;
+  height: auto;
+  min-height: 70vh;
+  max-height: 100vh;
+  background-image: url("../../IMG/Szechenyi/Szechenyi_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 /* Széchenyi POPUP */
 #Szechenyi_Modal_1 {
@@ -298,6 +316,7 @@ strong {
 html, body {
   width: 100%;
   scroll-behavior: smooth;
+  scroll-margin: 8rem;
 }
 
 header {
@@ -1100,6 +1119,14 @@ section.valaszto_container {
   padding-bottom: 1rem;
 }
 
+.img_fit_palyazat {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  padding-bottom: 1rem;
+}
+
 /* KÉSZ PROJEKTEK KÜLSŐ */
 #bemutatkozas_projektek {
   top: 4rem;
@@ -1433,7 +1460,7 @@ section.valaszto_container {
   font-weight: 300;
 }
 
-#kesz_palyazatok {
+#szechenyi_palyazatok {
   padding-top: 3rem;
   padding-bottom: 0rem;
   width: 100%;
@@ -1655,7 +1682,8 @@ section.valaszto_container {
     overflow: hidden;
   }
 
-  .img_fit {
+  .img_fit,
+  .img_fit_palyazat {
     padding-bottom: 0.25rem;
   }
 
@@ -1708,6 +1736,12 @@ section.valaszto_container {
     width: 100%;
     padding-top: 2rem;
     padding-left: 2rem;
+  }
+
+  .Szechenyi_1 {
+    min-height: 60vh;
+    max-height: 100vh;
+
   }
 }
 
