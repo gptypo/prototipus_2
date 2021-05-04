@@ -1485,9 +1485,11 @@ section.valaszto_container {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  /*
   -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
+  */
   background-image: url("../IMG/SVG/infoblokk_kedv_final_also_rgb_ERFA.svg");
   background-position: bottom right;
   background-repeat: no-repeat;
