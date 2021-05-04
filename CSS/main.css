@@ -1757,11 +1757,20 @@ section.valaszto_container {
     .anchor_span { 
       margin-top: -10rem;
       padding-bottom: 10rem; 
-      display: block; 
+      display: block;
+    }
     
+      .landpage_div_container_bemutatkozas::before { 
+        display: block; 
+        content: " "; 
+        margin-top: -285px; 
+        height: 285px; 
+        visibility: hidden; 
+        pointer-events: none;
+      }
     
 
-  }
+  
 }
 
 /* KISEBB MINT 425px */
