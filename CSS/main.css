@@ -1481,6 +1481,17 @@ section.valaszto_container {
         justify-content: space-evenly;
 }
 
+.anchor_span { 
+  margin-top: -4rem;
+  padding-bottom: 4rem; 
+  display: block; 
+}
+
+
+
+
+
+
 /* MEDIA */
 /* Nagyobb mint 1024px */
 @media only screen and (min-width: 1024px) {
@@ -1741,6 +1752,14 @@ section.valaszto_container {
   .Szechenyi_1 {
     min-height: 60vh;
     max-height: 100vh;
+  }
+
+    .anchor_span { 
+      margin-top: -6rem;
+      padding-bottom: 6rem; 
+      display: block; 
+    
+    
 
   }
 }
@@ -1749,3 +1768,4 @@ section.valaszto_container {
 @media only screen and (max-width: 425px) {
 
 }
+
