@@ -75,9 +75,9 @@ table {
 html, body, * {
   font-size: 100%;
   font-family: "Krub" !important;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
 }
 
 .vh100 {
@@ -193,8 +193,12 @@ strong {
   bottom: 0;
   margin-bottom: -5px;
   position: fixed;
-  z-index: 9999;
+  z-index: 1;
   width: 200px;
+}
+
+#Szechenyi_zindex {
+  z-index: 9998;
 }
 
 .Szechenyi_container img {
@@ -1036,6 +1040,10 @@ article {
   height: 100vh;
 }
 
+#palyazat_zindex {
+  z-index: 2;
+}
+
 #projekt_valaszto, 
 #belso_valaszto {
   top: 0;
@@ -1169,7 +1177,7 @@ section.valaszto_container {
 #kesz_projektek {
   padding-top: 8rem;
   width: 100%;
-  min-height: 100vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1479,6 +1487,10 @@ section.valaszto_container {
   -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
+  background-image: url("../IMG/SVG/infoblokk_kedv_final_also_rgb_ERFA.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 200px;
 }
 
 .anchor_span { 
@@ -1486,10 +1498,6 @@ section.valaszto_container {
   padding-bottom: 3.7rem; 
   display: block; 
 }
-
-
-
-
 
 
 /* MEDIA */
@@ -1526,6 +1534,12 @@ section.valaszto_container {
     height: 75vh;
     background-position: bottom;
   }
+
+  #szechenyi_palyazatok {
+    background-size: 300px;
+  }
+
+
 }
 
 /* Kisebb mint 1024px */

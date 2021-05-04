@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACA,AAAA,CAAC,AAAA,KAAK,EAAE,CAAC,AAAA,QAAQ,CAAA;EAChB,OAAO,EAAE,CAAC;EACV,SAAS,EAAE,2BAA2B;CACrC;;AAED,UAAU,CAAV,IAAU;EACV,EAAE;IAAG,OAAO,EAAE,CAAC;;EACf,IAAI;IAAG,OAAO,EAAE,CAAC",
-    "sources": [
-        "forditashoz.scss"
-    ],
-    "names": [],
-    "file": "forditashoz.css"
-}
