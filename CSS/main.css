@@ -101,7 +101,6 @@ html, body, * {
   align-self: center;
 }
 
-/* Szinek */
 /* TIPOGRÁFIA */
 a {
   font-family: 'Krub';
@@ -147,6 +146,12 @@ h3 {
   font-size: 1.5rem;
   line-height: 2.25rem;
   text-transform: uppercase;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 2rem;
 }
 
 p {
@@ -1494,7 +1499,7 @@ section.valaszto_container {
   padding-bottom: 0rem;
   width: 100%;
   height: auto;
-  min-height: 75vh;
+  /*min-height: 75vh;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1625,6 +1630,43 @@ section.valaszto_container {
     */
   }
 
+  .projekt_elem_container,
+  .palyazat_elem_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .projekt_kepes_resz {
+    width: 100%;
+    height: auto;
+  }
+
+  .projekt_szoveges_resz {
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .palyazat_szoveges_resz {
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .imagebox {
+    width: calc(100vw);
+    height: calc(100vw * 0.625);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+
 }
 
 /* KISEBB MINT 767px */
@@ -1704,14 +1746,17 @@ section.valaszto_container {
     font-size: 0.75rem;
     padding-bottom: 1rem;
   }
+
   .icon_48px {
     width: 48px;
     height: auto;
   }
+
   .cim h2 {
     font-weight: 400;
     font-size: 9vw;
   }
+
   .projekt_elem_container,
   .palyazat_elem_container {
     -webkit-box-orient: vertical;
@@ -1719,10 +1764,12 @@ section.valaszto_container {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+
   .projekt_kepes_resz {
     width: 100%;
     height: auto;
   }
+
   .imagebox {
     width: calc(100vw);
     height: calc(100vw * 0.625);
@@ -1757,6 +1804,12 @@ section.valaszto_container {
     font-weight: 600;
     font-size: 1.25rem;
     line-height: auto;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
   
   .projekt_select img,
